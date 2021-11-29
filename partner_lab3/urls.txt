@@ -1,0 +1,19 @@
+Get all
+GET / "/”
+We will use a GET to receive all the reservations on the API. 
+
+Get your reservation
+GET / "/getName/:name'"
+We will use a GET to your(user) reservation
+
+Create Reservatiopn
+POST / "/getName/:name/startDate/:startdate/startTime/:starttime/hours/:hour"
+This will create the reservation with all the required fields. If a field is not filled in it will return a 404, if there is a duplicate the API will not post the name and return a "Duplicate" error message. 
+
+Update Reservatiopn
+PATCH / “/getName/:name/startDate/:startdate/startTime/:starttime/hours/:hour”
+This will update all the fields. The fields will be pre-filled and if the user deletes a field and submits a empty value they will receive a 404. 
+
+Delete Reservation
+DELETE / "/getName/:name"
+Delete reservation based off name.
