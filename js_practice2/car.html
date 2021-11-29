@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <!-- represents the characters -->
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Someplace for our JS</title>
+        </head>
+        <body>
+                <h1>IST 411</h1>
+                <label>Name:</label>
+                <input type = "text" id = "nameBox"></input>
+                <br>
+                <p id = "outputField"></p>
+ 
+                <div id = "main"></div>
+ 
+                <br>
+                <button onclick="sayHello();">Say hello!</button>
+                <br>
+                <button onclick="addGreeting();">Add Greeting</button>
+                <br>
+                <button onclick="clearGreetings();">Clear Greetings</button>
+                <br>
+                <button onclick="testForPickles();">Any Pickles???</button>
+ 
+                <ul>
+                        <li>Thing 1</li>
+                        <li>Thing 2</li>
+                        <li>Thing 3</li>
+                </ul>
+                <br>
+ 
+                <ul id = "songList"></ul>
+ 
+                <select>
+                        <option>Thing 1</option>
+                        <option>Thing 2</option>
+                        <option>Thing 3</option>
+                </select>
+                <br><br>
+                <input type = "radio" name = "trimLevel" id = "eco">Economy</input><br>
+                <input type = "radio" name = "trimLevel" id = "lux">Luxury</input><br>
+                <br><br>
+ 
+                <input type = "checkbox" id = "mustard" value = "Mustard">Mustard</input><br>
+                <input type = "checkbox" id = "mayo" value = "Mayo">Mayo</input><br>
+                <input type = "checkbox" id = "pickles" value = "Pickles">Pickles</input><br>
+ 
+                <select id = "carList" onchange="getItemSelected();"></select>
+ 
+                       
+ 
+                <script src="car.js" defer></script>     
+        </body>
+</html>
