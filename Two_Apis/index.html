@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <!-- represents the characters -->
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Beers and Space</title>
+        </head>
+        <body id = "background" style="background-color: rosybrown;">
+                <h1>Beers and Space </h1>
+                <hr> </hr>
+                <p id = "paragraph" style="color:whitesmoke;">I pulled two APIs, one is a from SpaceX and the other is a list of Breweries in the US. The first character of the selected sorting method (Brewery or Rocket) 
+                        will be used to find either a brewery name or rocket ship name with the same first corresponding character. (If there are more rocketship than breweries names it will pull the first rocket name.)
+                </p>
+                <hr> </hr>
+                <label>Search Breweries...</label>
+                <input type="text" id="search">
+                <button id = "searchButton" onClick = "getText()" searchtype="button">Search</button> <br><br>
+                <label>Change Background Color</label>
+                <input type="checkbox" id="checkbox" onclick = "changeBackground()"><br><br>
+                <h3>Sort by... </h3>
+                <input type="radio" id="Brewery" name="radioButton" value = "Brewery" onclick = "displayInfo()">
+                <label>Brewery</label>
+                <input type="radio" id="Rocket" name="radioButton" value= "Rocket" onclick = "displayInfo()">
+                <label>Rocket</label><br>
+                
+                <table id = "table" width = "100%" style = "border:solid; background-color: beige;">
+                        <tr id = "header">
+                        </tr>
+                        <tr id = "row"> 
+                         </tr>
+                </table> 
+
+                <script src="script.js" defer></script>     
+
+        </body>
+</html>
